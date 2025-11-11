@@ -1,87 +1,51 @@
-Hangman Game in Python 🐍
-
+# Hangman Game in Python 
 A classic word-guessing game built from scratch in Python. Guess the hidden word, one letter at a time, before you run out of lives!
+This project is a step-by-step creation from a Python bootcamp.
+## Features
 
-This project is a step-by-step creation from a Python bootcamp, designed to practice core programming fundamentals.
+* **Classic Gameplay**: Guess letters to find the hidden word.
+* **Limited Lives**: You'll have to guess the word before you run out of attempts!
+* **Random Word Selection**: The game randomly picks a word from a predefined list, so every game is different.
+* **ASCII Art**: Visual feedback as the hangman is drawn with each incorrect guess.
+* **Simple & Fun**: A text-based game that runs directly in your terminal.
 
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
+## How to Play
 
+To run this game on your local machine, follow these simple steps.
 
-🎮 Features
+### Prerequisites
 
-Classic Gameplay: A simple and addictive text-based word game.
+You must have **Python 3** installed.
 
-Random Word Selection: The game randomly picks a word from a predefined list, making every session unique.
+### Installation & Running
 
-❤️ Lives System: You only have a limited number of guesses! Make them count.
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/netanel152/bootcamp-python-hangman-game.git](https://github.com/netanel152/bootcamp-python-hangman-game.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd bootcamp-python-hangman-game
+    ```
+3.  **Run the game:**
+    ```sh
+    python hangman.py
+    ```
+    *(Note: If your main file is named something else, like `main.py`, use that command instead.)*
 
-ASCII Art: Visual feedback as the hangman is drawn with each incorrect guess.
+4.  **Enjoy!** Follow the prompts in the terminal to guess letters and solve the puzzle.
 
-Runs Anywhere: As a simple terminal application, it runs in any standard console.
+## Project Structure
 
-🚀 How to Run
+The game is built with a single Python script (`hangman.py`) and uses the built-in `random` module to select words.
 
-To get this game running on your local machine, just follow these simple steps.
+**Key Concepts Used:**
+* `while` loops (to keep the game running)
+* `for` loops (to iterate over the word)
+* String & List Manipulation to build and update the display of blanks and correct letters.
+* Lists (to manage the displayed blanks)
+* User input (`input()`)
+* Conditional logic (`if`/`else`)
+* Modules (like random) to import word lists and other game assets.
 
-Prerequisites
-
-You must have Python 3 installed on your system.
-
-Installation & Running
-
-Clone the repository:
-
-git clone [https://github.com/netanel152/bootcamp-python-hangman-game.git](https://github.com/netanel152/bootcamp-python-hangman-game.git)
-
-
-Navigate to the project directory:
-
-cd bootcamp-python-hangman-game
-
-
-Run the game script:
-
-python hangman.py
-
-
-(Note: If your main file has a different name, like main.py, use that command instead.)
-
-Start playing!
-
-📜 Rules of the Game
-
-The game will choose a secret word at random.
-
-You will see a row of blanks (_) representing the letters in the word.
-
-Guess a single letter and press Enter.
-
-If the letter is in the word, it will be revealed in all its correct positions.
-
-If the letter is not in the word, you will lose one life, and a new part of the hangman will be drawn.
-
-You win by guessing all the letters in the word before you run out of lives.
-
-You lose if the hangman is fully drawn!
-
-🛠️ Key Concepts
-
-This project is a practical exercise in Python fundamentals. The core of the game is built using:
-
-while loops to control the main game flow and keep it running until the player wins or loses.
-
-for loops to iterate over the word's letters.
-
-String & List Manipulation to build and update the display of blanks and correct letters.
-
-Conditional Logic (if/else) to check if a guess is correct, if the player has won, or if they are out of lives.
-
-User Input (input()) to get the player's guess.
-
-Modules (like random) to import word lists and other game assets.
+---
