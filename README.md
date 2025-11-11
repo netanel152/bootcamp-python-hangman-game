@@ -21,7 +21,7 @@ You must have **Python 3** installed.
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/netanel152/bootcamp-python-hangman-game.git](https://github.com/netanel152/bootcamp-python-hangman-game.git)
+    git clone https://github.com/netanel152/bootcamp-python-hangman-game.git
     ```
 2.  **Navigate to the project directory:**
     ```sh
